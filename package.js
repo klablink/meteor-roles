@@ -8,7 +8,7 @@ Package.describe({
 })
 
 Package.onUse(function (api) {
-  api.versionsFrom(['2.8.0'])
+  api.versionsFrom(['3.0-beta.0'])
 
   const both = ['client', 'server']
 
@@ -21,7 +21,7 @@ Package.onUse(function (api) {
     'ddp'
   ], both)
 
-  api.use('zodern:types@1.0.11')
+  api.use('zodern:types')
 
   api.use(['blaze@2.9.0'], 'client', { weak: true })
 
@@ -41,8 +41,8 @@ Package.onTest(function (api) {
   // Add code coverage
   api.use([
     'lmieulet:meteor-legacy-coverage',
-    'lmieulet:meteor-coverage@4.1.0',
-    'meteortesting:mocha@2.1.0'
+    'lmieulet:meteor-coverage',
+    'meteortesting:mocha'
   ])
 
   api.versionsFrom(['2.3', '2.8.1'])
