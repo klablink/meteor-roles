@@ -543,7 +543,7 @@ Object.assign(Roles, {
 
       // and then add all
       for (const role of roles) {
-        await Roles._addUserToRole(id, role, options)
+        await Roles._addUserToRoleAsync(id, role, options)
       }
     }
   },
