@@ -8,7 +8,7 @@ Package.describe({
 })
 
 Package.onUse(function (api) {
-  api.versionsFrom(['3.0-beta.0'])
+  api.versionsFrom(['3.0'])
 
   const both = ['client', 'server']
 
@@ -23,7 +23,7 @@ Package.onUse(function (api) {
 
   api.use('zodern:types')
 
-  api.use(['blaze@2.9.0'], 'client', { weak: true })
+  api.use(['blaze'], 'client', { weak: true })
 
   api.export('Roles')
 
